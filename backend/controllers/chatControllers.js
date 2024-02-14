@@ -107,7 +107,7 @@ const renameGroup = asyncHandler(async (req, res) => {
   const updatedChat = await Chat.findByIdAndUpdate(
     chatId,
     {
-      chatName,
+      chatName: chatName,
     },
     {
       new: true,
